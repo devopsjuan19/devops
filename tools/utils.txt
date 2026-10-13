@@ -1,9 +1,4 @@
-
-
 comands
 
-
-
 replace text |1| by |2| in all README.md files
-
 find . -type f -name "README.md" -exec sed -i 's/|1|/|2|/g' {} + 
