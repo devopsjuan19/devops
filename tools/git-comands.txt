@@ -1,0 +1,49 @@
+verificar el estado de los archivos modificados: 
+git status
+
+añadir los archivos al area de preparacion
+git add .  #.para agregar todos los archivos modificados
+git add specificfile.txt # para agregar un archivo especifico
+
+guardar los cambios localmente con un mensaje descriptivo
+git commit -m "escribe un mensaje corto sobre los cambios"
+For example: git commit -m "cambio de color al boton de enviar"
+
+subir los cambios a github
+git push 
+si es la primera vez que subes esa rama debes especificar el origen 
+git push origin [main|master|develop|production]
+
+
+1. Crear un repositorio vacío en GitHub
+
+1. Entra a tu cuenta en GitHub.
+2. Haz clic en el botón + (esquina superior derecha) y selecciona New repository.
+3. Escribe el nombre de tu repositorio.
+4. Elige si será público o privado.
+5. No marques la opción de agregar un archivo README, .gitignore o licencia (déjalo completamente vacío para evitar conflictos al sincronizar).
+6. Haz clic en Create repository. Copia la URL HTTPS o SSH que te muestra GitHub.
+
+2. Inicializar el proyecto en tu terminal
+
+Abre tu terminal (o Git Bash) y ejecuta los siguientes comandos paso a paso dentro de la carpeta de tu proyecto:
+1. Navega hasta la carpeta del proyecto:bash
+cd /ruta/de/tu/carpeta
+Usa el código con precaución.
+2. Inicializa el repositorio de Git local:bash
+git init -b main
+Usa el código con precaución.
+(Nota: si tu versión de Git es antigua y no acepta -b main, usa git init y luego git branch -M main).
+3. Añade los archivos al área de espera (staging area):bash
+git add .
+Usa el código con precaución.
+4. Realiza el primer commit (guardado local):bash
+git commit -m "Primer commit"
+Usa el código con precaución.
+5. Conecta tu repositorio local con el repositorio remoto en GitHub:bash
+git remote add origin https://github.com
+Usa el código con precaución.
+(Sustituye la URL por la de tu repositorio)
+6. Sube tus archivos a GitHub:bash
+git push -u origin main
+Usa el código con precaución.
